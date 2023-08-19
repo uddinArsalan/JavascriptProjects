@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 70px;
+}
+
+.box{
+    border: 2px solid black;
+    width: 65px;
+    height: 65px;
+    padding: 34px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 4px gray;
+}
+
+.fill{
+    background-color: aqua;
+}
+
+.invisible{
+    background-color: white;
+    border: 2px solid black;
+    width: 65px;
+    height: 65px;
+    padding: 34px;
+    border-radius: 10px;
+    box-shadow: 2px 4px gray;
+}
+
+.hovered{
+    border: 3px solid dashed;
+}
+
+.scale{
+    transform: scale(2,2);
+}

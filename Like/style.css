@@ -1,0 +1,107 @@
+body{
+    background-color: antiquewhite;
+}
+
+.like{
+    color: rgb(212, 44, 100);
+    font-weight: bold;
+    font-size: 45px;
+    /* animation-name: ball;
+    animation-duration: 10s; */
+}
+
+@keyframes ball {
+    0%{
+        position: absolute;
+        right: 4px;
+        top: 50vh;
+        bottom: 50vh;
+    }
+    25%{
+        position: absolute;
+        right: 50vw;
+        left: 50vw;
+        bottom: 4px;
+    }
+    50%{
+        position: absolute;
+        left: 4px;
+        bottom: 50vh;
+    }
+    75%{
+        position: absolute;
+        top: 4px;
+        left: 50vw;
+    }
+}
+
+.heart{
+    margin: 45px;
+    background-color: red;
+    padding: 54px;
+    width: 75px;
+    height: 85px;
+    transform-origin: top right;
+    /* border-radius: 152px; */
+    border-top-left-radius: 145px;
+    border-top-right-radius: 345px;
+    border-bottom-right-radius:145px ;
+    opacity: 0.4;
+    transform: rotate(-45deg);
+    position: relative;
+}
+
+.heart:before,
+.heart:after{
+    content: "";
+    background-color: red;
+    /* opacity: 0.4; */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.heart:before{
+    top: 45px;
+    left: 45px;
+}
+.heart:after{
+    top: 45px;
+    left: 90px;
+}
+
+.box{
+    width: 45px;
+    background-color: red;
+    height: 45px;
+    padding: 45px;
+    transform: rotate(-45deg);
+}
+
+.cir{
+    background-color: red;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    padding: 45px;
+}
+
+.cir1{
+    position: absolute;
+    top: 45px;
+    left: 44px;
+}
+.cir2{
+    position: absolute;
+    top: 45px;
+    right: 50px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}

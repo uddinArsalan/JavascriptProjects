@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+/* .animation{
+    width: 140px;
+    height: 25px;
+    border: 1px solid black;
+    background-color: rgb(226, 149, 149);
+    transition: all 0.3s linear;
+    animation-name: animation;
+} */
+
+.box{
+    width: 140px;
+    height: 25px;
+    border: 1px solid black;
+    background-color: rgb(226, 149, 149);
+    /* transition: all 0.3s linear; */
+}
+
+#box1{
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+}
+
+#box2{
+    /* animation-name: bottombox;
+    animation-duration: 10s; */
+    position: absolute;
+    bottom: 0px;
+}
+
+@keyframes bottombox {
+    0%{
+        position: absolute;
+        left: 20%;
+    }
+    25%{
+        position: absolute;
+        left: 40%;
+    }
+    50%{
+        position: absolute;
+        right: 30%;
+    }
+    75%{
+        position: absolute;
+        right: 60%;
+    }
+    100%{
+        position: absolute;
+        left: 10%;
+    }
+}
+
+@keyframes animation {
+    10%{
+        position: absolute;
+        left: 20%;
+    }
+    20%{
+        position: absolute;
+        right: 70%;
+    }
+    40%{
+        position: absolute;
+        right: 10%;
+    }
+    60%{
+        position: absolute;
+        right: 40%;
+    }
+    80%{
+        position: absolute;
+        right: 60%;
+    }
+    100%{
+        position: absolute;
+        left: 30%;
+    }
+}

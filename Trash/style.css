@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.tree{
+    height: 100vh;
+}
+
+.lamp--post{
+    height: 100vh;
+    position: absolute;
+    /* top: 10px; */
+}
+
+.bin{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    bottom: 1rem;
+    left: 25rem;
+    /* background-color: rgb(66,40,23); */
+}
+
+
+.dark--mode{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 17px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+}
+
+.trash__flex{
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.animation{
+    animation-name: drop;
+    animation-duration: 5s;
+    /* position: absolute;
+    top: 0px; */
+}
+
+.trash{
+    width: 100px;
+    animation-name: drop;
+    animation-duration: 9s;
+    position: absolute;
+    top: 0px;
+}
+
+.trash__hidden{
+    display: none;
+}
+
+.trash:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+
+@keyframes drop {
+    0%{
+        top: 120px;
+    }
+    25%{
+        top: 250px;
+    }
+    50%{
+        top: 400px;
+    }
+    75%{
+        top: 500px;
+    }
+    100%{
+        top: 80vh;
+    }
+}
+
+.score{
+    /* display: flex;
+    justify-content: flex-end; */
+    /* margin-right: 40px; */
+    position: absolute;
+    right: 140px;
+    font-weight: bold;
+    font-size: 2rem;
+    top: 20px;
+}

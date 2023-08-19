@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: seagreen;
+}
+
+.heading{
+    font-size: 50px;
+    animation-name: transition;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes transition {
+    25%{
+        position: relative;
+        color: seagreen;
+        right: 0px;
+        background-color: red;
+    }
+    50%{
+        position: relative;
+        color: rgb(49, 138, 88);
+        right: 78px;
+        background-color: aqua;
+    }
+    75%{
+        position: relative;
+        right: 98px;
+        background-color: orange;
+    }
+    100%{
+        position: relative;
+        right: 108px;
+        background-color: chartreuse;
+    }
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#input__speed{
+    border-radius: 6px;
+    background:  seagreen;
+    width: 44px;
+    padding: 4px;
+    border: 0px solid rgb(104, 156, 104);
+}
+
+.span__container{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 40px;
+}
+
+.span__container--text{
+    font-weight: bold;
+}
